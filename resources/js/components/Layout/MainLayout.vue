@@ -1,7 +1,7 @@
 <template>
-    <div class="flex flex-col">
+    <div class="flex flex-col h-screen p-4">
         <Header />
-        <main>
+        <main class="flex-1 overflow-y-auto">
             <slot />
         </main>
         <Footer />

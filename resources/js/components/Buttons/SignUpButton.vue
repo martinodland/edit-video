@@ -3,12 +3,12 @@
             colorClass="bg-blue-500 hover:bg-blue-700 transition duration-300" 
             @click="login"
         > 
-        Login 
+        Sign Up 
     </BaseButton>
 </template>
 <script setup> 
     import BaseButton from './BaseButton.vue' 
-    function login(){
-        console.log("login");
+    function signup(){
+        console.log("signup");
     } 
  </script>

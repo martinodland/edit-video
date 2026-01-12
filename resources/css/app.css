@@ -14,3 +14,23 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+.animated-background{
+  background: linear-gradient(-45deg, #3BB143, #0018F9);
+  animation: gradient 3s ease infinite;
+  background-size: 400% 400%;
+  margin: 0 auto;
+  padding: 8px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

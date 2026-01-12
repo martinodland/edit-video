@@ -1,10 +1,18 @@
 <template>
-    <button :class="['px-4 py-2 rounded', colorClass]">
+    <a :href="link" :class="['px-4 py-2 rounded bg-[#0018F9] font-bold', colorClass]">
         <slot />
-    </button>
+    </a>
 </template>
-<script>
-export default {
-    props: { colorClass: { type: String, default: "bg-gray-400 text-white" } },
-};
+
+<script setup>
+    defineProps({
+        colorClass: {
+            type: String,
+            default: "bg-gray-400 text-white"
+        },
+        link: { 
+            type: String, 
+            default: ""
+        },
+    });
 </script>
